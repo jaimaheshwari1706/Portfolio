@@ -36,6 +36,36 @@ export class Projects implements AfterViewInit {
       gradient: 'from-yellow-400 to-orange-400',
     },
   ];
+  // projects = [
+  //   {
+  //     title: 'UbiRecruit (Recruitment Management System)',
+  //     tech: ['Angular 17', 'RxJS', 'PHP', 'MySQL'],
+  //     description: 'Developed 12+ reusable components, integrated 10+ APIs, and delivered real-time updates improving HR productivity by 30%.',
+  //     link: '#',
+  //   live: '#',
+  //     github: '#',
+  //     gradient: 'from-pink-500 to-blue-500'
+  //   },
+  //   {
+  //     title: 'Employee Management Module (HRMS)',
+  //     tech: ['Angular 13', 'Angular Material', 'REST APIs'],
+  //     description: 'Built SPA automating HR work by 35%, refactored 25+ UI components for maintainability, optimized API response handling.',
+  //     link: '#'
+  //   live: '#',
+  //     github: '#',
+  //     gradient: 'from-purple-500 to-pink-400'
+  //   },
+  //   {
+  //     title: 'Performance Analytics Dashboard Migration',
+  //     tech: ['AngularJS → Angular 15', 'RxJS', 'PHP APIs'],
+  //     description: 'Migrated legacy dashboard reducing data refresh latency by 30%, improved UI rendering from 3.2s → 1.9s.',
+  //     link: '#'
+  //   live: '#',
+  //     github: '#',
+  //     gradient: 'from-yellow-400 to-orange-400'
+  //   }
+  // ];
+
 
   ngAfterViewInit() {
     const cards = Array.from(document.querySelectorAll<HTMLElement>('.project-card'));

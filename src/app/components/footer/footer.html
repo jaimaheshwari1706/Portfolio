@@ -1,13 +1,51 @@
-<footer class="bg-[#0b1020] text-gray-300 py-8 px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-  <p>© 2025 Jai Maheshwari. All Rights Reserved.</p>
+<footer class="relative bg-[#0b1020] text-white py-12 px-6">
+  <div class="max-w-6xl pt-6 border-t border-white/10 mx-auto grid md:grid-cols-3 gap-10">
 
-  <div class="flex gap-4">
-    <a
-      *ngFor="let social of socialLinks"
-      [href]="social.href"
-      target="_blank"
-      class="hover:text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500 text-xl transition duration-300"
-      >{{ social.icon }}</a
-    >
+    <!-- About / Short Intro -->
+    <div class="flex flex-col gap-4">
+      <h3 class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-400">
+        Jai Maheshwari
+      </h3>
+      <p class="text-gray-400">
+        Full-Stack Developer | Angular | PHP | MySQL | REST APIs <br />
+        Crafting interactive, high-performance web applications.
+      </p>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="flex flex-col gap-4">
+      <h4 class="text-lg font-semibold text-pink-400">Contact</h4>
+      <div class="flex items-center gap-3 group">
+        <span class="text-pink-400 text-2xl transition-transform duration-300 group-hover:scale-110">📧</span>
+        <a href="mailto:jaimaheshwari943@gmail.com"
+          class="text-gray-300 hover:text-pink-400 transition duration-300">jaimaheshwari943@gmail.com</a>
+      </div>
+      <div class="flex items-center gap-3 group">
+        <span class="text-pink-400 text-2xl transition-transform duration-300 group-hover:scale-110">📞</span>
+        <a href="tel:+916260382865" class="text-gray-300 hover:text-pink-400 transition duration-300">+91 6260382865</a>
+      </div>
+      <div class="flex items-center gap-3 group">
+        <span class="text-pink-400 text-2xl transition-transform duration-300 group-hover:scale-110">🔗</span>
+        <a href="https://linkedin.com/in/jaimaheshwari1706" target="_blank"
+          class="text-gray-300 hover:text-pink-400 transition duration-300">LinkedIn</a>
+        <a href="https://github.com/jaimaheshwari1706" target="_blank"
+          class="text-gray-300 hover:text-pink-400 transition duration-300">GitHub</a>
+      </div>
+    </div>
+
+    <!-- Quick Links / CTA -->
+    <div class="flex flex-col gap-4">
+      <h4 class="text-lg font-semibold text-pink-400">Quick Links</h4>
+      <a href="#home" class="text-gray-300 hover:text-pink-400 transition duration-300">Home</a>
+      <a href="#about" class="text-gray-300 hover:text-pink-400 transition duration-300">About</a>
+      <a href="#skills" class="text-gray-300 hover:text-pink-400 transition duration-300">Skills</a>
+      <a href="#projects" class="text-gray-300 hover:text-pink-400 transition duration-300">Projects</a>
+      <a href="#contact" class="text-gray-300 hover:text-pink-400 transition duration-300">Contact</a>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="mt-10 border-t border-white/10 pt-6 text-center text-gray-500 text-sm">
+    &copy; 2025 Jai Maheshwari. All Rights Reserved.
   </div>
 </footer>
