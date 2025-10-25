@@ -1,12 +1,17 @@
+import { NgForOf } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
-  imports: [],
   standalone: true,
+  imports: [NgForOf],
   templateUrl: './footer.html',
-  styleUrl: './footer.css',
+  styleUrls: ['./footer.css'],
 })
 export class Footer {
-
+  socialLinks = [
+    { name: 'GitHub', href: '#', icon: '🐙' },
+    { name: 'LinkedIn', href: '#', icon: '💼' },
+    { name: 'Twitter', href: '#', icon: '🐦' },
+  ];
 }

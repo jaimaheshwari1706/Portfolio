@@ -1,0 +1,7 @@
+section {
+  scroll-snap-align: start;
+}
+
+.gradient-input {
+  background: linear-gradient(to right, rgba(255, 0, 150, 0.1), rgba(0, 200, 255, 0.1));
+}

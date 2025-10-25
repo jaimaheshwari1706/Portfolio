@@ -1,4 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --accent-1: #9B5DE5;
+  --accent-2: #F15BB5;
+  --accent-3: #00BBF9;
+  --accent-4: #FCEE21;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0b1020;
+  color: white;
+  scroll-behavior: smooth;
+}

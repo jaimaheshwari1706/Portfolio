@@ -1,8 +1,13 @@
-<footer class="bg-indigo-700 text-white py-6 text-center">
-  <p>© 2025 Jai Maheshwari. All rights reserved.</p>
-  <div class="flex justify-center space-x-4 mt-2">
-    <a href="#" class="hover:text-gray-300">LinkedIn</a>
-    <a href="#" class="hover:text-gray-300">GitHub</a>
-    <a href="#" class="hover:text-gray-300">Twitter</a>
+<footer class="bg-[#0b1020] text-gray-300 py-8 px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+  <p>© 2025 Jai Maheshwari. All Rights Reserved.</p>
+
+  <div class="flex gap-4">
+    <a
+      *ngFor="let social of socialLinks"
+      [href]="social.href"
+      target="_blank"
+      class="hover:text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500 text-xl transition duration-300"
+      >{{ social.icon }}</a
+    >
   </div>
 </footer>
