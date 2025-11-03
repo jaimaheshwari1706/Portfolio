@@ -1,40 +1,96 @@
 <section
   id="about"
-  class="relative flex flex-col items-center justify-center py-24 px-6 bg-[#0b1020]"
+  class="relative flex flex-col items-center justify-center min-h-screen px-6 py-28 bg-[#0b1020] overflow-hidden"
 >
-  <!-- Glow circles background -->
-  <div class="absolute -top-32 left-0 w-96 h-96 bg-pink-500/30 blur-[120px] rounded-full"></div>
-  <div class="absolute bottom-0 right-0 w-80 h-80 bg-blue-500/30 blur-[100px] rounded-full"></div>
+  <!-- Background Glows -->
+  <div class="absolute -top-40 left-0 w-[500px] h-[500px] bg-pink-500/25 blur-[140px] rounded-full"></div>
+  <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-500/25 blur-[140px] rounded-full"></div>
 
-  <!-- Section heading -->
-  <h2 class="text-4xl md:text-5xl font-extrabold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-400">
+  <!-- Heading -->
+  <h2
+    class="text-5xl md:text-6xl font-extrabold mb-16 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-400 tracking-wide"
+    data-aos="fade-up"
+  >
     About Me
   </h2>
 
-  <!-- Card container -->
-  <div class="relative z-10 max-w-5xl mx-auto grid md:grid-cols-2 gap-10 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-lg shadow-2xl p-8 md:p-12 hover:shadow-pink-500/20 transition duration-500" data-aos="fade-up">
-    <!-- Image -->
-    <div class="flex justify-center items-center">
-      <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Profile" class="w-48 h-48 md:w-64 md:h-64 rounded-2xl object-cover border-4 border-pink-500/40 hover:scale-105 transition duration-500"/>
+  <!-- Main Container -->
+  <div
+    class="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 bg-white/5 border border-white/10 rounded-3xl backdrop-blur-2xl shadow-[0_0_40px_-10px_rgba(255,105,180,0.4)] p-10 md:p-16 hover:shadow-pink-500/30 transition duration-700"
+    data-aos="fade-up"
+  >
+    <!-- Left: Profile and Summary -->
+    <div class="flex flex-col items-center sm:items-start text-center sm:text-left space-y-6">
+      <img
+        src="https://avatars.githubusercontent.com/u/9919?s=200&v=4"
+        alt="Jai Maheshwari"
+        class="w-64 h-64 md:w-80 md:h-80 rounded-3xl object-cover border-4 border-pink-500/40 shadow-2xl hover:scale-105 transition duration-700"
+      />
+      <div>
+        <h3 class="text-3xl font-bold text-white">Jai Maheshwari</h3>
+        <p class="text-pink-400 text-lg font-medium">Software Development Engineer @ Ubitech Solutions Pvt. Ltd.</p>
+      </div>
+
+      <p class="text-gray-300 text-lg leading-relaxed">
+        I’m a passionate <span class="text-blue-400 font-semibold">Full-Stack Developer</span> who thrives at the intersection of
+        design, logic, and performance. My goal is to craft seamless, scalable web applications that deliver exceptional user
+        experiences.
+      </p>
+
+      <p class="text-gray-300 text-lg leading-relaxed">
+        At <span class="text-pink-400 font-semibold">Ubitech Solutions</span>, I’ve engineered and maintained over
+        <span class="text-blue-400 font-semibold">10+ Angular SPAs</span> and <span class="text-blue-400 font-semibold">20+ REST API</span>
+        integrations, transforming enterprise workflows through smart architecture and efficient code.
+      </p>
+
+      <p class="text-gray-300 text-lg leading-relaxed">
+        I’m highly skilled in <span class="text-pink-400 font-semibold">Angular (13–17), TypeScript, PHP, MySQL, and REST APIs</span>,
+        focusing on performance optimization, reusable component design, and clean architecture principles.
+      </p>
     </div>
 
-    <!-- Text content -->
-    <div class="flex flex-col justify-center text-gray-300">
-      <h3 class="text-2xl font-bold text-white mb-4">Who Am I?</h3>
-      <p class="mb-4 leading-relaxed">
-        I’m <span class="text-pink-400 font-semibold">Jai Maheshwari</span>, a full-stack developer passionate about delivering high-quality web solutions.  
-        I craft **interactive, responsive, and scalable applications** using Angular, TypeScript, PHP, MySQL, and RESTful APIs.
-      </p>
-      <p class="mb-4 leading-relaxed">
-        Over the past year, I’ve built and maintained **10+ SPAs and enterprise-level components**, optimized API performance, and migrated legacy AngularJS projects to modern Angular, reducing load times by up to 40%.
-      </p>
-      <p class="mb-4 leading-relaxed">
-        I enjoy working on both **frontend and backend**, bridging design and functionality to create seamless user experiences. I also mentor interns and contribute to team workflows, collaborating in Agile environments to deliver real-world applications.
-      </p>
+    <!-- Right: Skills + Expertise -->
+    <div class="flex flex-col justify-center space-y-8 text-gray-300">
+      <h3 class="text-3xl font-bold text-white">Technical Expertise</h3>
 
-      <a href="#skills" class="mt-4 inline-block px-6 py-3 bg-gradient-to-r from-pink-500 to-blue-500 text-white rounded-full font-medium hover:opacity-90 transition duration-300">
-        Discover My Skills
-      </a>
+      <!-- Skills Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-5 text-center">
+        <div class="bg-white/10 border border-white/10 rounded-2xl p-5 hover:bg-pink-500/20 transition duration-300">
+          <h4 class="text-xl text-pink-400 font-semibold">Angular</h4>
+          <p class="text-sm text-gray-400 mt-1">13–17, RxJS, SPA Design</p>
+        </div>
+        <div class="bg-white/10 border border-white/10 rounded-2xl p-5 hover:bg-blue-500/20 transition duration-300">
+          <h4 class="text-xl text-blue-400 font-semibold">TypeScript</h4>
+          <p class="text-sm text-gray-400 mt-1">Strong typing, OOP</p>
+        </div>
+        <div class="bg-white/10 border border-white/10 rounded-2xl p-5 hover:bg-pink-500/20 transition duration-300">
+          <h4 class="text-xl text-pink-400 font-semibold">PHP</h4>
+          <p class="text-sm text-gray-400 mt-1">Backend & REST APIs</p>
+        </div>
+        <div class="bg-white/10 border border-white/10 rounded-2xl p-5 hover:bg-blue-500/20 transition duration-300">
+          <h4 class="text-xl text-blue-400 font-semibold">MySQL</h4>
+          <p class="text-sm text-gray-400 mt-1">Database Design</p>
+        </div>
+        <div class="bg-white/10 border border-white/10 rounded-2xl p-5 hover:bg-pink-500/20 transition duration-300">
+          <h4 class="text-xl text-pink-400 font-semibold">REST APIs</h4>
+          <p class="text-sm text-gray-400 mt-1">Integration & Testing</p>
+        </div>
+        <div class="bg-white/10 border border-white/10 rounded-2xl p-5 hover:bg-blue-500/20 transition duration-300">
+          <h4 class="text-xl text-blue-400 font-semibold">Git / Postman</h4>
+          <p class="text-sm text-gray-400 mt-1">Versioning & API Debug</p>
+        </div>
+      </div>
+
+      <!-- Career Highlights -->
+      <div class="mt-8 space-y-4">
+        <h3 class="text-3xl font-bold text-white">Career Highlights</h3>
+        <ul class="list-disc list-inside space-y-3 text-lg">
+          <li>🏆 Migrated AngularJS projects to Angular 15, improving performance by <span class="text-pink-400 font-semibold">40%</span>.</li>
+          <li>💡 Developed <span class="text-blue-400 font-semibold">10+ reusable Angular modules</span> for enterprise dashboards.</li>
+          <li>🚀 Optimized API data handling using <span class="text-pink-400 font-semibold">RxJS</span> and lazy loading.</li>
+          <li>👨‍🏫 Mentored 2 interns on Angular standards and Git best practices.</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>

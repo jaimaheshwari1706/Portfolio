@@ -19,6 +19,13 @@ export class Hero implements AfterViewInit {
     // GSAP text float animation
     gsap.from('.hero-title', { y: 30, opacity: 0, duration: 1 });
     gsap.from('.hero-subtitle', { y: 30, opacity: 0, duration: 1, delay: 0.3 });
-    gsap.from('.cta-btn', { y: 20, opacity: 0, duration: 1, delay: 0.6 });
+    // gsap.from('.cta-btn', { y: 20, opacity: 0, duration: 1, delay: 0.6 });
+    gsap.from('.cta-btn', {
+      y: 20,
+      opacity: 0,
+      duration: 0.8,
+    });
+
+
   }
 }
