@@ -39,3 +39,8 @@ coverage/
 # Temporary folders
 tmp/
 temp/
+
+# Backend (moved to separate repo)
+backend/
+setup.bat
+run-dev.bat

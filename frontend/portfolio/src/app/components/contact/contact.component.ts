@@ -221,29 +221,16 @@ export class ContactComponent implements OnInit {
     this.isSubmitting = true;
     this.submitMessage = '';
     
-    this.http.post('https://your-backend-url.railway.app/api/contact', this.form)
-      .subscribe({
-        next: (response) => {
-          this.submitSuccess = true;
-          this.submitMessage = 'Message sent successfully! I\'ll get back to you soon.';
-          this.form = { name: '', email: '', subject: '', message: '' };
-          this.isSubmitting = false;
-          
-          // Auto-hide success message after 5 seconds
-          setTimeout(() => {
-            this.submitMessage = '';
-          }, 5000);
-        },
-        error: (error) => {
-          this.submitSuccess = false;
-          this.submitMessage = 'Failed to send message. Please try again or contact me directly.';
-          this.isSubmitting = false;
-          
-          // Auto-hide error message after 5 seconds
-          setTimeout(() => {
-            this.submitMessage = '';
-          }, 5000);
-        }
-      });
+    // Simulate form submission
+    setTimeout(() => {
+      this.submitSuccess = false;
+      this.submitMessage = 'Please contact me directly via email or LinkedIn.';
+      this.isSubmitting = false;
+      
+      // Auto-hide message after 5 seconds
+      setTimeout(() => {
+        this.submitMessage = '';
+      }, 5000);
+    }, 1000);
   }
 }
