@@ -1,107 +1,59 @@
-# Jai Maheshwari - Personal Portfolio
+# Portfolio
 
-A modern, responsive portfolio website built with Angular 20 and Tailwind CSS.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.3.
 
-## 🚀 Features
+## Development server
 
-- **Modern Design**: Dark theme with smooth animations and gradients
-- **Responsive**: Mobile-first design that works on all devices
-- **Fast Performance**: Built with Angular 20 and optimized for speed
-- **Contact Form**: Contact form for inquiries
-- **SEO Friendly**: Proper meta tags and semantic HTML
-
-## 🛠️ Tech Stack
-
-### Frontend
-- Angular 20
-- TypeScript
-- Tailwind CSS
-- SCSS
-
-## 📁 Project Structure
-
-```
-jai-portfolio/
-├── frontend/portfolio/          # Angular application
-│   ├── src/app/components/      # Portfolio components
-│   ├── src/app/data/           # JSON data files
-│   └── src/styles.scss         # Global styles
-└── README.md                  # This file
-```
-
-## 🚀 Quick Start
-
-### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn
-- Angular CLI
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-url>
-   cd jai-portfolio
-   ```
-
-2. **Setup Frontend**
-   ```bash
-   cd frontend/portfolio
-   npm install
-   ```
-
-### Running the Application
+To start a local development server, run:
 
 ```bash
-cd frontend/portfolio
 ng serve
 ```
-App runs on: http://localhost:4200
 
-## 🎨 Customization
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-### Update Personal Information
-Edit `frontend/portfolio/src/app/data/portfolio.json`:
-- Personal details
-- Skills and technologies
-- Work experience
-- Projects
-- Education
+## Code scaffolding
 
-### Styling
-- Global styles: `frontend/portfolio/src/styles.scss`
-- Tailwind config: `frontend/portfolio/tailwind.config.js`
-- Component styles: Individual component files
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-## 📱 Sections
-
-- **Hero**: Name, title, and introduction
-- **About**: Detailed bio and quick facts
-- **Skills**: Technical skills organized by category
-- **Experience**: Work history with achievements
-- **Projects**: Featured projects with links
-- **Contact**: Contact form and information
-
-## 🚀 Deployment
-
-### Frontend (Netlify/Vercel)
 ```bash
-cd frontend/portfolio
-ng build --prod
+ng generate component component-name
 ```
-Deploy the `dist/` folder
 
-## 📄 License
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-This project is open source and available under the [MIT License](LICENSE).
+```bash
+ng generate --help
+```
 
-## 🤝 Contact
+## Building
 
-**Jai Maheshwari**
-- Email: jaimaheshwari943@gmail.com
-- LinkedIn: [linkedin.com/in/jaimaheshwari](https://linkedin.com/in/jaimaheshwari)
-- GitHub: [github.com/jaimaheshwari](https://github.com/jaimaheshwari)
+To build the project run:
 
----
+```bash
+ng build
+```
 
-Built with ❤️ using Angular
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+
+## Running unit tests
+
+To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

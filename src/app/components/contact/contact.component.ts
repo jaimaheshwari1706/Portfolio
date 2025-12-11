@@ -221,16 +221,26 @@ export class ContactComponent implements OnInit {
     this.isSubmitting = true;
     this.submitMessage = '';
     
-    // Simulate form submission
-    setTimeout(() => {
-      this.submitSuccess = false;
-      this.submitMessage = 'Please contact me directly via email or LinkedIn.';
-      this.isSubmitting = false;
-      
-      // Auto-hide message after 5 seconds
-      setTimeout(() => {
-        this.submitMessage = '';
-      }, 5000);
-    }, 1000);
+    this.http.post('http://localhost:3000/api/contact', this.form).subscribe({
+      next: (response: any) => {
+        this.submitSuccess = true;
+        this.submitMessage = 'Message sent successfully!';
+        this.form = { name: '', email: '', subject: '', message: '' };
+        this.isSubmitting = false;
+        
+        setTimeout(() => {
+          this.submitMessage = '';
+        }, 5000);
+      },
+      error: (error) => {
+        this.submitSuccess = false;
+        this.submitMessage = 'Failed to send message. Please try again.';
+        this.isSubmitting = false;
+        
+        setTimeout(() => {
+          this.submitMessage = '';
+        }, 5000);
+      }
+    });
   }
 }
