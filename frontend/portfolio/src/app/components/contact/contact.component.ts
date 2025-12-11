@@ -221,7 +221,7 @@ export class ContactComponent implements OnInit {
     this.isSubmitting = true;
     this.submitMessage = '';
     
-    this.http.post('http://localhost:3000/api/contact', this.form)
+    this.http.post('https://your-backend-url.railway.app/api/contact', this.form)
       .subscribe({
         next: (response) => {
           this.submitSuccess = true;
