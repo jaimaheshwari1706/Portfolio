@@ -221,7 +221,7 @@ export class ContactComponent implements OnInit {
     this.isSubmitting = true;
     this.submitMessage = '';
     
-    this.http.post('http://localhost:3000/api/contact', this.form).subscribe({
+    this.http.post('https://portfolio-backend-shc1.onrender.com/api/contact', this.form).subscribe({
       next: (response: any) => {
         this.submitSuccess = true;
         this.submitMessage = 'Message sent successfully!';
