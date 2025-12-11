@@ -191,7 +191,7 @@ import portfolioData from '../../data/portfolio.json';
         <!-- Footer -->
         <div class="text-center mt-16 pt-8 border-t border-dark-700">
           <p class="text-dark-400">
-            © 2024 {{data.personal.name}}. Built with ❤️ using Angular & Node.js
+            © 2024 {{data.personal.name}}. Built with using Angular & Node.js
           </p>
         </div>
       </div>
