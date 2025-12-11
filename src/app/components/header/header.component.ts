@@ -33,7 +33,7 @@ import { CommonModule } from '@angular/common';
           <!-- Theme Toggle & Mobile Menu Button -->
           <div class="flex items-center space-x-4">
             <!-- Resume Button -->
-            <a href="#contact" 
+            <a href="/CV.pdf" download="CV.pdf"
                class="hidden sm:block px-4 py-2 bg-gradient-primary text-white rounded-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-glow hover:shadow-glow-lg">
               Resume
             </a>
@@ -64,7 +64,7 @@ import { CommonModule } from '@angular/common';
                [class]="mobileOpen ? 'animate-slide-in-left' : ''">
               {{item.label}}
             </a>
-            <a href="#contact" 
+            <a href="/CV.pdf" download="CV.pdf"
                (click)="closeMobile()"
                class="block mx-4 mt-4 px-4 py-3 bg-gradient-primary text-white text-center rounded-lg font-medium transition-all duration-300 transform hover:scale-105">
               Resume
