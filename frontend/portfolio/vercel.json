@@ -1,5 +1,11 @@
 {
-  "buildCommand": "npm install -g @angular/cli && ng build",
+  "buildCommand": "npm install -g @angular/cli && ng build --configuration=production",
   "outputDirectory": "dist/portfolio",
-  "installCommand": "npm install"
+  "installCommand": "npm install",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
