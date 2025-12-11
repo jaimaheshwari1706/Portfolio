@@ -1,0 +1,85 @@
+{
+  "personal": {
+    "name": "Jai Maheshwari",
+    "title": "Full-Stack Software Developer",
+    "bio": "Full-Stack Software Developer with 1+ years of experience building scalable enterprise applications using Angular, Node.js, PHP, and MySQL. Expertise in both frontend (Angular 13-20, TypeScript, RxJS) and backend (REST APIs, database design) development. Strong in component-driven architecture, API integration, and performance optimization.",
+    "email": "jaimaheshwari943@gmail.com",
+    "phone": "+91 6260382865",
+    "location": "Gwalior, India",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/jai-maheshwari-1706n/",
+      "github": "https://github.com/jaimaheshwari1706"
+    }
+  },
+  "skills": {
+    "frontend": ["Angular (13-20)", "AngularJS", "TypeScript", "JavaScript (ES6+)", "RxJS", "HTML5", "CSS3", "SCSS", "Tailwind CSS"],
+    "backend": ["Core Java", "Node.js", "PHP", "RESTful APIs", "MySQL"],
+    "tools": ["Git", "GitHub", "Postman", "VS Code", "Agile/Scrum"],
+    "core": ["SPA Architecture", "State Management", "API Integration", "Code Optimization", "AngularJS → Angular Migration"]
+  },
+  "experience": [
+    {
+      "title": "Software Development Engineer I",
+      "company": "Ubitech Solutions Pvt. Ltd.",
+      "period": "Aug 2025 – Present",
+      "location": "Gwalior, India",
+      "achievements": [
+        "Developed enterprise Angular applications (13–17), REST integrations, and optimized module performance",
+        "Migrated legacy AngularJS modules improving UI performance by 40% and maintainability by 25%",
+        "Improved API efficiency by 30% using RxJS, lazy loading & interceptors",
+        "Built reusable UI components & collaborated with backend teams in Agile sprints",
+        "Mentored interns in Angular and Git workflow"
+      ]
+    },
+    {
+      "title": "Web Development Intern",
+      "company": "Ubitech Solutions Pvt. Ltd.",
+      "period": "Dec 2024 – Jul 2025",
+      "location": "Gwalior, India",
+      "achievements": [
+        "Built 3+ Angular modules improving UI responsiveness by 25%",
+        "Implemented reusable form validations improving performance 20%",
+        "Worked with PHP MVC backend, MySQL, and resolved 15+ production bugs"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Personal Portfolio Website",
+      "tech": ["Angular 20", "Node.js", "Tailwind CSS", "TypeScript", "Express.js"],
+      "description": "Modern full-stack portfolio website with Angular frontend and Node.js backend. Features glassmorphism design, particle animations, contact form with email integration, and responsive design. Built with modern development practices and optimized performance.",
+      "github": "https://github.com/jaimaheshwari/jai-portfolio",
+      "demo": "https://jaimaheshwari.dev"
+    },
+    {
+      "title": "Employee Management Module",
+      "tech": ["Angular", "Angular Material", "TypeScript", "REST APIs"],
+      "description": "Developed a full employee management SPA including profiles, attendance, and role-based modules. Refactored 25+ components improving maintainability by 40%. Enhanced UX with Material components and optimized API handling.",
+      "github": "https://github.com/jaimaheshwari/employee-management",
+      "demo": "#"
+    },
+    {
+      "title": "Timesheet Management Module",
+      "tech": ["Angular", "MySQL", "PHP REST APIs"],
+      "description": "Created daily/weekly/monthly timesheet views for employee work-hour tracking. Integrated secure API storage and retrieval, added filters, validation, summary views, and supported HR dashboard analytics.",
+      "github": "https://github.com/jaimaheshwari/timesheet-management",
+      "demo": "#"
+    }
+  ],
+  "education": [
+    {
+      "degree": "MCA (Pursuing)",
+      "institution": "Maharana Pratap College of Technology",
+      "period": "2024–2026",
+      "location": "Gwalior",
+      "cgpa": "Pursuing"
+    },
+    {
+      "degree": "BCA",
+      "institution": "Maharana Pratap College of Allied Science",
+      "period": "2021–2024",
+      "location": "Gwalior",
+      "cgpa": "7.55"
+    }
+  ]
+}
